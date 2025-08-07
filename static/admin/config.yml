@@ -2,7 +2,8 @@ backend:
   name: github
   repo: tanxy888/gg # <<=== 替换为你的 GitHub 用户名/新仓库名
   branch: main
-  auth_proxy_url: https://github-oauth.decapcms.org/auth
+ # auth_proxy_url: https://github-oauth.decapcms.org/auth
+client_id: "Ov23liEKfUGGcM6bKYw9"
 
 media_folder: "static/images"
 public_folder: "/images"
