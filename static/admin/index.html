@@ -4,13 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>资讯管理后台 - Decap CMS</title>
-  <script src="https://unpkg.com/decap-cms@3.0.0/dist/decap-cms.js"></script>
+  <script src="https://unpkg.com/decap-cms@3.0.12/dist/decap-cms.js"></script>
 </head>
 <body>
   <div id="cms-root"></div>
+  <script src="https://unpkg.com/decap-cms@3.0.12/dist/decap-cms.js"></script>
   <script>
-    // 通常 Decap CMS 会在 window.CMS 全局变量可用后自动初始化
-    // 但如果之前遇到问题，明确调用 init 是一种可靠的方式
     if (typeof CMS !== 'undefined') {
       CMS.init();
     } else {
