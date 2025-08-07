@@ -3,7 +3,8 @@ backend:
   repo: tanxy888/gg # <<=== 替换为你的 GitHub 用户名/新仓库名
   branch: main
  # auth_proxy_url: https://github-oauth.decapcms.org/auth
-client_id: "Ov23liEKfUGGcM6bKYw9"
+  client_id: "Ov23liEKfUGGcM6bKYw9"
+  auth_type: pkce # 指定认证类型为 PKCE，适用于非 Netlify 环境
 
 media_folder: "static/images"
 public_folder: "/images"
