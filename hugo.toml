@@ -29,7 +29,7 @@ buildExpired = false
     keywords = ["资讯", "新闻", "科技", "行业", "DNYXXG"]
     author = "你的名称"
     description = "一个简洁现代的资讯采集站，模仿DNYXXG风格"
-    images = ["/images/default-share-image.jpg"] # 请确保你的 static/images/ 目录下有这张图片
+    images = ["/images/sample-news-cover.jpg"] # 请确保你的 static/images/ 目录下有这张图片
 
     [params.home]
         homeInfoParams = {}
