@@ -2,7 +2,7 @@
 # 你的 Hugo 网站主配置文件 (hugo.toml)
 # ====================================================================
 
-baseURL = "https://gg.pages.dev/" # <<=== 替换为你部署到 Cloudflare Pages 后会生成的域名
+baseURL = "https://gg-151.pages.dev" # <<=== 替换为你部署到 Cloudflare Pages 后会生成的域名
 title = "我的DNYXXG风格资讯站"
 languageCode = "zh-cn"
 DefaultContentLanguage = "zh"

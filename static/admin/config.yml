@@ -7,7 +7,7 @@ backend:
 media_folder: "static/images"
 public_folder: "/images"
 
-site_url: "https://gg.pages.dev" # <<=== 替换为你部署到 Cloudflare Pages 后会生成的域名
+site_url: "https://gg-151.pages.dev" # <<=== 替换为你部署到 Cloudflare Pages 后会生成的域名
 
 collections:
   - name: "posts"
