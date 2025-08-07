@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>新闻 on 我的DNYXXG风格资讯站</title>
+    <link>https://gg-151.pages.dev/tags/%E6%96%B0%E9%97%BB/</link>
+    <description>Recent content in 新闻 on 我的DNYXXG风格资讯站</description>
+    <image>
+      <title>我的DNYXXG风格资讯站</title>
+      <url>https://gg-151.pages.dev/images/sample-news-cover.jpg</url>
+      <link>https://gg-151.pages.dev/images/sample-news-cover.jpg</link>
+    </image>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 07 Aug 2025 10:00:00 +0800</lastBuildDate>
+    <atom:link href="https://gg-151.pages.dev/tags/%E6%96%B0%E9%97%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的第一篇有效资讯文章</title>
+      <link>https://gg-151.pages.dev/posts/first-valid-post/</link>
+      <pubDate>Thu, 07 Aug 2025 10:00:00 +0800</pubDate>
+      <guid>https://gg-151.pages.dev/posts/first-valid-post/</guid>
+      <description>&lt;p&gt;这是重新安装后，Decap CMS 应该能看到的第一个有效内容。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
