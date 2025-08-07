@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: tanxy888/gg # <<=== 替换为你的 GitHub 用户名/新仓库名
+  branch: main
+  auth_proxy_url: https://github-oauth.decapcms.org/auth
+
+media_folder: "static/images"
+public_folder: "/images"
+
+site_url: "https://gg.pages.dev" # <<=== 替换为你部署到 Cloudflare Pages 后会生成的域名
+
+collections:
+  - name: "posts"
+    label: "文章"
+    folder: "content/posts"
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "标题", name: "title", widget: "string", required: true }
+      - { label: "发布日期", name: "date", widget: "datetime", required: true, format: "YYYY-MM-DDTHH:mm:ssZ" }
+      - { label: "封面图片", name: "featured_image", widget: "image", required: false, choose_url: false, hint: "用于文章列表和详情页的大图" }
+      - { label: "描述", name: "description", widget: "text", required: false, hint: "文章的简短描述，用于SEO或列表显示" }
+      - { label: "标签", name: "tags", widget: "list", required: false, allow_add: true, default: [] }
+      - { label: "分类", name: "categories", widget: "list", required: false, allow_add: true, default: [] }
+      - { label: "正文", name: "body", widget: "markdown", required: true, hint: "文章的主要内容" }
+      - { label: "草稿", name: "draft", widget: "boolean", default: true, hint: "勾选表示文章为草稿，不会在网站上显示" }

@@ -1,0 +1,96 @@
+# ====================================================================
+# 你的 Hugo 网站主配置文件 (hugo.toml)
+# ====================================================================
+
+baseURL = "https://gg.pages.dev/" # <<=== 替换为你部署到 Cloudflare Pages 后会生成的域名
+title = "我的DNYXXG风格资讯站"
+languageCode = "zh-cn"
+DefaultContentLanguage = "zh"
+theme = "PaperMod" # 指定使用 PaperMod 主题
+
+# 分页设置
+[pagination]
+    pagerSize = 10 # 每页显示的文章数量
+
+enableRobotsTXT = true
+enableEmoji = true
+enableGitInfo = false
+disablePathToLower = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+# ====================================================================
+# PaperMod 主题参数配置
+# ====================================================================
+[params]
+    defaultTheme = "light"
+    disableThemeToggle = false
+    keywords = ["资讯", "新闻", "科技", "行业", "DNYXXG"]
+    author = "你的名称"
+    description = "一个简洁现代的资讯采集站，模仿DNYXXG风格"
+    images = ["/images/default-share-image.jpg"] # 请确保你的 static/images/ 目录下有这张图片
+
+    [params.home]
+        homeInfoParams = {}
+        ShowRecent = true
+
+    ShowReadingTime = true
+    ShowShareButtons = false
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    ShowToc = true
+    ShowWordCount = true
+    ShowRssIcon = true
+
+    [params.assets]
+      customCSS = ["css/my_custom_styles.css"]
+
+# ====================================================================
+# 菜单配置
+# ====================================================================
+[menu]
+    [[menu.main]]
+        identifier = "home"
+        name = "首页"
+        url = "/"
+        weight = 10
+    [[menu.main]]
+        identifier = "categories"
+        name = "分类"
+        url = "/categories/"
+        weight = 20
+    [[menu.main]]
+        identifier = "tags"
+        name = "标签"
+        url = "/tags/"
+        weight = 30
+    [[menu.main]]
+        identifier = "archives"
+        name = "归档"
+        url = "/archives/"
+        weight = 40
+
+# ====================================================================
+# 输出格式 (可选)
+# ====================================================================
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+    page = ["HTML"]
+    section = ["HTML", "RSS"]
+    taxonomy = ["HTML", "RSS"]
+    term = ["HTML", "RSS"]
+
+# ====================================================================
+# Markdown 渲染和代码高亮配置
+# ====================================================================
+[markup.highlight]
+    anchorLineNos = true
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineNos = true
+    noClasses = false
+    style = "github"
+    tabWidth = 4
